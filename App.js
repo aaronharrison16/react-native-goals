@@ -21,6 +21,8 @@ export default function App() {
       ...currentGoals,
       { key: Math.random().toString(), value: enteredGoal }
     ]);
+
+    setEnteredGoal(enteredGoal => "");
   };
 
   return (
